@@ -1,0 +1,422 @@
+/* Title of the Filter Section */
+.filter-section h3 {
+  font-size: 1.6rem;
+  margin: 80px 0 20px; /* Combined margin-top and margin-bottom */
+  color: #333;
+}
+
+/* Filter Options */
+.filter-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 20px;
+  position: absolute;
+  top: 35%; /* <-- Move it up from the vertical center */
+  left: 26%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.filter-two-options{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 20px;
+  position: absolute;
+  top: 35%; /* <-- Move it up from the vertical center */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.filter-three-options{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 20px;
+  position: absolute;
+  top: 35%; /* <-- Move it up from the vertical center */
+  left: 74%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.filter-options label {
+  font-size: 1rem;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+
+/* Checkbox Styles */
+input[type="checkbox"] {
+  accent-color: #6ca871;
+  width: 18px;
+  height: 18px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .filter-options {
+      justify-content: center;
+  }
+  
+  .restaurant-item {
+      padding: 15px;
+  }
+  
+  .restaurant-item h4 {
+      font-size: 1.4rem;
+  }
+}
+
+/* Collapsible Header */
+
+
+/* Filter Section */
+.filter-section {
+  padding: 35px 20px 20px; /* Increased top padding */
+  background-color: #ffffff;
+  min-height: 100vh;
+}
+
+/* Filter Button */
+.filter-button {
+  padding: 10px 15px;
+  border:none;
+  background-color: white;
+  color: #333;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  ;
+}
+
+.filter-button:hover,
+.filter-button.active {
+  color: rgb(108, 168, 113);
+  
+}
+
+.restaurant-list {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 20px;         
+  justify-content: center;
+}
+/* Restaurant Item */
+.restaurant-item {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.cuisine-button.active {
+  color: rgb(108, 168, 113);
+}
+
+.restaurant-item h4 {
+  font-size: 1.6rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Allergy Filter */
+.allergy-filter {
+  display: flex;
+  justify-content: space-between; /* Spaces them out evenly */
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px; /* Adds space between them */
+}
+
+.allergy-filter h3 {
+  font-size: 1.5rem;
+  cursor: pointer;
+  white-space: nowrap; /* Prevents wrapping */
+  text-align: center; /* Centers text inside each h3 */
+  
+}
+
+.first-filter-options{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-bottom: 30px;
+  justify-content: absolute;
+}
+
+.cuisine-button{
+  padding: 10px 15px;
+  border: none;
+  background-color: white;
+  color: #333;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  margin-bottom: 50px;
+}
+
+.cuisine-button:hover,
+.filter-button.active {
+  color: rgb(108, 168, 113);
+}
+
+.collapsible-two-header {
+  position: absolute;
+  top: 30%; /* <-- Move it up from the vertical center */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  
+}
+.collapsible-three-header {
+  position: absolute;
+  top: 30%; /* <-- Move it up from the vertical center */
+  left: 74%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  
+}
+
+.collapsible-header {
+  position: absolute;
+  top: 30%; /* <-- Move it up from the vertical center */
+  left: 26%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  
+}
+
+.start-header {
+  text-align: center;          /* Center the text horizontally */
+  margin-top: 20px;            /* Move it higher */
+  margin-bottom: 20px;         /* Optional: space below */
+}
+
+.filter-section .collapsible-header {
+  font-size: 1rem;
+  padding: 10px 15px;
+  border: none;
+  color: #333;
+  cursor: pointer;
+  border-radius: 40px;
+  background-color: #f5f5f5;
+  transition: background-color 0.3s ease;
+  }
+
+.filter-section .collapsible-two-header {
+  font-size: 1rem;
+  padding: 10px 15px;
+  border: none;
+  background-color: #f5f5f5;
+  transition: background-color 0.3s ease;
+  color: #333;
+  cursor: pointer;
+  border-radius: 40px;
+}
+
+.filter-section .collapsible-three-header {
+  font-size: 1rem;
+  padding: 10px 15px;
+  border: none;
+  background-color: #f5f5f5;
+  transition: background-color 0.3s ease;
+  color: #333;
+  cursor: pointer;
+  border-radius: 40px;
+}
+
+.collapsible-header:hover{
+  background-color:#e0e0e0 ;
+  transition: background-color 0.3s ease;
+}
+
+.collapsible-two-header:hover{
+  background-color:#e0e0e0 ;
+  transition: background-color 0.3s ease;
+}
+.collapsible-three-header:hover{
+  background-color:#e0e0e0 ;
+  transition: background-color 0.3s ease;
+}
+.collapsible-header.active,
+.collapsible-two-header.active,
+.collapsible-three-header.active {
+  background-color: #000000d1;
+  color: white;
+}
+.fastfood-img-container,
+.breakfast-img-container,
+.healthy-img-container,
+.burger-img-container {
+  position: relative;
+  width: 64px;
+  height: 64px;
+  cursor: pointer;
+  overflow: visible;  
+}
+
+.fastfood-img,
+.breakfast-img,
+.healthy-img,
+.burger-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+
+.fastfood-img:hover,
+.breakfast-img:hover,
+.healthy-img:hover,
+.burger-img:hover {
+  transform: scale(1.1);
+}
+.fastfood-img-wrapper {
+  display:flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.reset-button {
+  font-size: 1rem;
+  padding: 10px 15px;
+  border: none;
+  background-color: #f5f5f5;
+  transition: background-color 0.3s ease;
+  color: #333;
+  cursor: pointer;
+  border-radius: 40px;
+  position: absolute;  
+  top: 28%;            
+  right: 0;            
+  margin-right: 30px;
+}
+
+.reset-button:hover{
+  background-color:#e0e0e0 ;
+  transition: background-color 0.3s ease; 
+}
+.restaraunt-img{
+  height: 128px;
+  width: 220px;
+  border-radius: 10px;
+}
+
+.first-filter-scroll-wrapper {
+  overflow-x: auto;
+  width: 100%;
+}
+
+.first-filter-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.cuisine-button {
+  flex: 0 0 auto;
+  min-width: 100px;
+}
+
+/* 👇 On smaller screens, enable horizontal scroll and nowrap */
+@media (max-width: 1820px) {
+  .first-filter-options {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    scroll-snap-type: x mandatory;
+    padding: 1rem 0 1rem 1rem;
+  }
+
+  .cuisine-button {
+    scroll-snap-align: start;
+  }
+
+  .first-filter-scroll-wrapper {
+    padding: 0;  /* No clipping padding */
+  }
+
+  .first-filter-options::-webkit-scrollbar {
+    height: 6px;
+  }
+
+  .first-filter-options::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+  }
+}
+.custom-grey-button {
+  background-color: #e0e0e0;   /* light gray */
+  color: #000;
+  border: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.custom-grey-button:hover {
+  background-color: #bcbcbc;   /* medium gray on hover */
+}
+
+.custom-grey-button:active,
+.custom-grey-button.active {
+  background-color: #000;      /* black when pressed/active */
+  color: #fff;                 /* white text on black */
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  
+}
+
+.filter-options-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  justify-content: center;
+}
+.filter-group {
+  position: relative;
+}
+
+.filter-popover {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  z-index: 10;
+  background: white;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  min-width: 220px;
+  max-width: 260px;
+  white-space: normal;
+}
+.filters-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 9.5rem;
+  margin-bottom: 2rem;
+  position: relative;
+}

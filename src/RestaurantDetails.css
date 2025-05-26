@@ -1,0 +1,142 @@
+.restaurant-name{
+  text-align: left;
+  margin-top: 50px;
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-left: 150px;
+  
+}
+
+.restaurant-header{
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.restaurant-details {
+  text-align: left;
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-left: 50px;
+  margin-top: 30px;
+  border: .2px solid grey;
+  padding: 30px;
+  max-width: 350px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;  /* Ensures the restaurant details can be placed in the normal flow */
+  z-index: 10;  /* Keeps restaurant details above the menu if necessary */
+  max-height: 600px; /* Prevents the restaurant details from growing too large */
+  overflow: hidden;
+}
+
+.restaurant-details p{
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+.restaurant-img {
+  width: 25px;          
+  height: auto;
+}
+.restaurant-details-one,
+.restaurant-details-two,
+.restaurant-details-three,
+.restaurant-details-four{        
+  display: flex;                        
+  align-items: flex-start;
+}
+.individual-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  padding: 20px;
+  margin-top: 10px;
+  flex-grow: 1; /* This ensures the menu takes up the remaining space */
+  max-height: 500px; /* You can adjust this height based on your layout */
+  width: 100%;
+  padding-top: 20px;
+}
+
+.food-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+  gap: 20px;
+  width: 80%;
+  max-width: 1200px;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-top: -21.5%;
+  margin-left: 20%;
+  overflow-y: auto; 
+  
+}
+
+.food-box {
+  background-color: #fdfdfd;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  height: 99%;
+}
+
+.food-box h3 {
+  margin-bottom: 10px;
+}
+
+.restaurant-logo {
+  display: flex;
+  justify-content: center;  
+  align-items: center;      
+  height: 100%;   
+  margin-top: 200px;          
+}
+
+.restaurant-logo-img {
+  max-width: 100%;  
+  max-height: 100%; 
+  border-radius: 25px;
+}
+
+.food-photo {
+  width: 100%;        
+  height: auto;           
+  max-height: 150px;      
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.food-box-link {
+  text-decoration: none; 
+  color: inherit; 
+}
+
+.food-box-link:hover {
+  cursor: pointer; 
+}
+
+.food-box:hover {
+  background-color: #f7f7f7; 
+}
+
+.hidden-compare-button {
+  visibility: hidden;  
+}
+
+.visible-compare-button {
+  visibility: visible;
+
+}
+
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.menu-img-wrapper img {
+  width: 100%;
+  height: 100px;
+  object-fit: contain;
+}

@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+html, body {
+    font-family: 'Poppins', sans-serif !important;
+    background: #f8fdf8 !important;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Hero Section */
+.hero-section {
+    background: 
+        linear-gradient(rgba(92, 154, 98, 0.7), rgba(92, 154, 98, 0.7)),
+        url('./assets/banner-img.jpg') center center / cover no-repeat;
+    color: white !important;
+    padding: 140px 20px 100px 20px !important;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem !important;
+    font-weight: 600 !important;
+    margin-bottom: 20px !important;
+}
+
+.hero-content p {
+    font-size: 1.25rem !important;
+    margin-bottom: 30px !important;
+}
+
+.button {
+    font-size: 20px !important;
+    border-radius: 50px !important;
+    padding: 12px 30px !important;
+    background: goldenrod !important;
+    border: none !important;
+    cursor: pointer !important;
+    color: white !important;
+    font-weight: bold !important;
+    transition: background 0.3s ease-in-out !important;
+}
+
+.button:hover {
+    background: rgb(202, 153, 30) !important;
+}
+
+/* Features Section */
+.features-section {
+    background-color: #eef6ee !important;
+    padding: 80px 0 !important;
+}
+
+.feature-box {
+    background-color: white !important;
+    border-radius: 12px !important;
+    padding: 30px 20px !important;
+    margin-bottom: 20px !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05) !important;
+    transition: transform 0.3s ease-in-out;
+}
+
+.feature-box:hover {
+    transform: translateY(-5px);
+}
+
+.feature-box h3 {
+    color: #2d6530 !important;
+    font-weight: 600 !important;
+    margin-bottom: 15px !important;
+}
+
+/* Call to Action Section */
+.cta-section {
+    background-color: #d7f3d2 !important;
+    padding: 80px 20px !important;
+    text-align: center;
+}
+
+.cta-section h2 {
+    font-size: 2.5rem !important;
+    font-weight: 600 !important;
+    margin-bottom: 15px !important;
+}
+
+.cta-section p {
+    font-size: 1.1rem !important;
+    margin-bottom: 25px !important;
+}
+
+.second-button {
+    font-size: 20px !important;
+    border-radius: 50px !important;
+    padding: 12px 30px !important;
+    background: goldenrod !important;
+    border: none !important;
+    color: white !important;
+    cursor: pointer !important;
+    transition: background 0.3s ease-in-out !important;
+}
+
+.second-button:hover {
+    background: rgb(202, 153, 30) !important;
+}
+
+/* Footer */
+.footer {
+    background: #1d3d1d !important;
+    color: white !important;
+    padding: 20px 0 !important;
+    margin-top: 0;
+}
+
+.footer-links a {
+    color: white !important;
+    text-decoration: none !important;
+    margin: 0 10px !important;
+    transition: color 0.3s ease-in-out !important;
+}
+
+.footer-links a:hover {
+    color: gold !important;
+}
+.features-row {
+    display: flex !important;
+    gap: 30px !important;
+    justify-content: center !important;
+}
+
+.no-wrap {
+    flex-wrap: nowrap !important;
+}
+
+/* On screens smaller than 768px (Bootstrap md breakpoint), allow wrapping again */
+@media (max-width: 767px) {
+    .no-wrap {
+        flex-wrap: wrap !important;
+    }
+}
