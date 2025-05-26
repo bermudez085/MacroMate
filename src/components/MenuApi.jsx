@@ -49,11 +49,13 @@ export async function getMenuDetails(searchTerm) {
 }
 
 export async function getMenuImg(restaurantName, food_name) {
-  const cx = "c4c66d49d6a3c4c9f";
+  const cx = import.meta.env.VITE_GOOGLE_CX;
+  const apiKey = import.meta.env.VITE_GOOGLE_API_KEY;
   const query = `${restaurantName} ${food_name}`;
+
   const endpoint = `https://www.googleapis.com/customsearch/v1?q=${encodeURIComponent(
     query
-  )}&searchType=image&key=AIzaSyBEuXRaPcbpZ26xGIHdukwReLtvNrVV-nU&cx=${cx}`;
+  )}&searchType=image&key=${apiKey}&cx=${cx}`;
 
   try {
     const response = await fetch(endpoint);
